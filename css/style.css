@@ -1,16 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Rowdies:wght@400;700&display=swap');
 
 * {
     font-family: 'Open Sans', sans-serif;
 }
-:focus{
+
+:focus {
     outline: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-li{
+
+li {
     list-style: none;
+}
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
 }
 
 /* banner area Start */
@@ -25,10 +33,17 @@ li{
     position: relative;
     padding: 150px 0;
 }
-.banner-title{
+
+.banner-title {
     font-size: 50px;
 }
-.banner-parent {max-width: 768px;margin: 0 auto;position: relative;z-index: 2;}
+
+.banner-parent {
+    max-width: 768px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
 
 h2.banner-title {
     margin: 0;
@@ -48,9 +63,10 @@ p.banner-description {
     border-radius: 5px;
     border: none;
     font-weight: 600;
-    color: #fff;
-    background: #FF5959;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 89, 89);
     cursor: pointer;
+    display: inline;
 }
 
 .banner-area:before {
@@ -64,6 +80,7 @@ p.banner-description {
     opacity: .5;
     z-index: 1;
 }
+
 /* banner area end */
 
 /* Donate Area start */
@@ -96,6 +113,7 @@ p.ammount-varients:hover {
     background: #FFEEEE;
     border: 2px solid #FF5959;
 }
+
 input[type="text"] {
     width: 100%;
     font-size: 17px;
@@ -104,4 +122,131 @@ input[type="text"] {
     padding: 6px 0;
     border: none;
 }
+
 /* Donate Area end */
+/* Donate Plan Area start */
+.service-cetagory {
+    display: flex;
+    gap: 20px;
+    text-align: left;
+}
+
+section.donate-plan-area {
+    text-align: center;
+    max-width: 1050px;
+    margin: 100px auto 0;
+}
+
+.service-item:first-child {
+    background: #EDF5F6;
+}
+
+.service-item:nth-child(2) {
+    background: #FFEEEE;
+}
+
+.service-item:last-child {
+    background: #FFF4D6;
+}
+
+.service-item {
+    padding: 47px 20px;
+    border-radius: 8px;
+}
+
+p.service-title {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Donate Plan Area end */
+
+/* Serviv Area start */
+section.serviv-area {
+    max-width: 1050px;
+    margin: 120px auto 0;
+}
+
+.serviv-parent {
+    display: flex;
+    gap: 100px;
+}
+
+.serviv-img img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+h2.serviv-title {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+p.serviv-description {
+    margin: 25px 0;
+}
+
+/* Serviv Area end */
+
+/* submit Area Start */
+section.submit-area {
+    text-align: center;
+    padding: 120px 0;
+}
+input[type="email"], input[type="submit"] {
+    border: none;
+    padding: 13px;
+    font-size: 16px;
+}
+
+input[type="email"] {
+    width: 61%;
+    background: #D9D9D9;
+}
+
+input[type="submit"] {
+    background: #FF5959;
+    color: #fff;
+    width: 30%;
+}
+
+form {
+    max-width: 429px;
+    display: flex;
+    margin: 0 auto;
+}
+section.submit-area {
+    text-align: center;
+    padding: 120px 0;
+    max-width: 821px;
+    margin: 0 auto;
+}
+.add-background {
+    background: #FFF4D6;
+    padding: 80px 100px;
+}
+footer {
+    text-align: center;
+    background: #000;
+    padding: 30px;
+}
+
+h4.stylist-font {font-family: 'Rowdies', cursive;font-size: 30px;color: #FF5959;line-height: 0;}
+
+footer p {
+    color: #fff;
+}
+/* submit Area end */
+/* footer area start */
+footer {
+    text-align: center;
+    background: #000;
+    padding: 63px;
+}
+
+h4.stylist-font {font-family: 'Rowdies', cursive;font-size: 30px;color: #FF5959;margin-bottom: 33px;}
+
+footer p {
+    color: #fff;
+}
+/* footer area end */
