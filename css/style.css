@@ -100,6 +100,7 @@ h2.section-title {
 .ammount-area {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 30px;
 }
 
 p.ammount-varients {
